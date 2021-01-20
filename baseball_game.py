@@ -165,7 +165,8 @@ def get_not_duplicated_three_digit_number():
     result = None
     while True:
         rnum = get_random_number()
-        if is_validated_number(rnum):
+        strnum = str(rnum)
+        if is_duplicated_number(strnum):
             result = rnum
             break
 
