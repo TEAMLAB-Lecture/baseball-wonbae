@@ -327,6 +327,9 @@ def main():
                         break
                 if is_no(response):
                     break
+                elif is_yes(response):
+                    random_number = str(get_not_duplicated_three_digit_number())
+                    print("Random Number is : ", random_number)
         else:
             print('Wrong Input, Input again')
 
